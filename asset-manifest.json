@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/WheaterApp/static/css/main.546c9b60.css",
-    "main.js": "/WheaterApp/static/js/main.b0b683aa.js",
+    "main.js": "/WheaterApp/static/js/main.cb7f4e36.js",
     "index.html": "/WheaterApp/index.html",
     "main.546c9b60.css.map": "/WheaterApp/static/css/main.546c9b60.css.map",
-    "main.b0b683aa.js.map": "/WheaterApp/static/js/main.b0b683aa.js.map"
+    "main.cb7f4e36.js.map": "/WheaterApp/static/js/main.cb7f4e36.js.map"
   },
   "entrypoints": [
     "static/css/main.546c9b60.css",
-    "static/js/main.b0b683aa.js"
+    "static/js/main.cb7f4e36.js"
   ]
 }
