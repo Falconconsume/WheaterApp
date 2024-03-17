@@ -18,7 +18,9 @@ const useForecast = () => {
 
   const getSearchOptions = (value: string) => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${value.trim()}&limit=5&appid=b9dc0e8f89c623675fd8afffd564be9c`
+      `http://api.openweathermap.org/geo/1.0/direct?q=${value.trim()}&limit=5&appid=${
+        process.env.REACT_APP_API_KEY
+      }`
     )
       .then((res) => res.json())
       .then((data) => setOptions(data))
@@ -26,7 +28,7 @@ const useForecast = () => {
 
   const getForecast = (city: optionType) => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?lat=${city.lat}&lon=${city.lon}&units=metric&appid=b9dc0e8f89c623675fd8afffd564be9c`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${city.lat}&lon=${city.lon}&units=metric&appid=${process.env.REACT_APP_API_KEY}`
     )
       .then((res) => res.json())
       .then((data) => {
